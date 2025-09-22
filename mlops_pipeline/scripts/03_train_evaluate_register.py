@@ -41,7 +41,12 @@ def train(preprocessing_run_id):
         acc = accuracy_score(y_test, preds)
 
         mlflow.log_metric("accuracy", acc)
-        mlflow.sklearn.log_model(pipe, "heart_model")
+        
+        # แก้บรรทัดนี้ - เพิ่ม try-catch รอบ log_model
+        try:
+            mlflow.sklearn.log_model(pipe, "heart_model")
+        except Exception as e:
+            print(f"Warning: Could not log model: {e}")
 
         if acc >= 0.85:
             try:
@@ -53,7 +58,3 @@ def train(preprocessing_run_id):
 
         print(f"Accuracy: {acc}")
 
-if __name__ == "__main__":
-    run_id = sys.argv[1] if len(sys.argv) > 1 else ""
-    train(run_id)
-    
