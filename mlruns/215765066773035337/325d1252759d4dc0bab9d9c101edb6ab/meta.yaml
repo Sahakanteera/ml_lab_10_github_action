@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/lab09_heart_mlflow/mlruns/215765066773035337/325d1252759d4dc0bab9d9c101edb6ab/artifacts
+end_time: 1757909196092
+entry_point_name: ''
+experiment_id: '215765066773035337'
+lifecycle_stage: active
+run_id: 325d1252759d4dc0bab9d9c101edb6ab
+run_name: crawling-hen-377
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757909196029
+status: 3
+tags: []
+user_id: computer

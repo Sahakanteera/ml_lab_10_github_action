@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/lab09_heart_mlflow/mlruns/215765066773035337/d4c4e41ef8074c12b5b8f2aba80de0cb/artifacts
+end_time: 1757909174982
+entry_point_name: ''
+experiment_id: '215765066773035337'
+lifecycle_stage: active
+run_id: d4c4e41ef8074c12b5b8f2aba80de0cb
+run_name: trusting-mouse-958
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757909174919
+status: 3
+tags: []
+user_id: computer

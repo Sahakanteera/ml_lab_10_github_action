@@ -1,0 +1,14 @@
+# Core dependencies
+pandas>=1.3
+numpy>=1.21
+scikit-learn>=1.0
+
+# MLflow for tracking, model registry, and serving
+mlflow>=2.3
+
+# Optional: if you use matplotlib for EDA or model plots
+matplotlib>=3.5
+
+# Optional: if you use Flask or FastAPI for custom API
+# fastapi
+# uvicorn

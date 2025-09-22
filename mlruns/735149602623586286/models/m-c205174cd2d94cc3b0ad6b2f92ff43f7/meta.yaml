@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/computer/Desktop/lab09_heart_mlflow/mlruns/735149602623586286/models/m-c205174cd2d94cc3b0ad6b2f92ff43f7/artifacts
+creation_timestamp: 1757909216726
+experiment_id: '735149602623586286'
+last_updated_timestamp: 1757909219779
+model_id: m-c205174cd2d94cc3b0ad6b2f92ff43f7
+model_type: null
+name: heart_model
+source_run_id: 4d4eca5ac94f4c6fb00ff8c3b434da46
+status: 2
+status_message: null

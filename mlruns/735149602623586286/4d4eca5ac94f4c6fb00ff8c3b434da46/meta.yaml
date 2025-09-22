@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/lab09_heart_mlflow/mlruns/735149602623586286/4d4eca5ac94f4c6fb00ff8c3b434da46/artifacts
+end_time: 1757909219828
+entry_point_name: ''
+experiment_id: '735149602623586286'
+lifecycle_stage: active
+run_id: 4d4eca5ac94f4c6fb00ff8c3b434da46
+run_name: unequaled-pig-259
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757909216646
+status: 3
+tags: []
+user_id: computer

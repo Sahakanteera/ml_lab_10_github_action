@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/computer/Desktop/lab09_heart_mlflow/mlruns/907925920080901011/a907ce0f22c3410eb9f7a134179b4bda/artifacts
+end_time: 1757909162735
+entry_point_name: ''
+experiment_id: '907925920080901011'
+lifecycle_stage: active
+run_id: a907ce0f22c3410eb9f7a134179b4bda
+run_name: suave-grub-814
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757909162675
+status: 3
+tags: []
+user_id: computer
