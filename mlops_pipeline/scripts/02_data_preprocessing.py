@@ -4,6 +4,10 @@ from sklearn.model_selection import train_test_split
 import mlflow
 
 def preprocess_data():
+    # เพิ่มบรรทัดนี้เพื่อป้องกัน path error
+    if not os.environ.get('MLFLOW_TRACKING_URI'):
+        mlflow.set_tracking_uri("file:./mlruns")
+    
     mlflow.set_experiment("Heart Disease - Preprocessing")
     with mlflow.start_run() as run:
         df = pd.read_csv("data/heart.csv")
@@ -23,9 +27,14 @@ def preprocess_data():
 
         mlflow.log_metric("train_rows", len(X_train))
         mlflow.log_metric("test_rows", len(X_test))
-        mlflow.log_artifacts(os.path.abspath("processed_data"), artifact_path="processed_data")
+        
+        # แก้บรรทัดนี้ - ไม่ใช้ abspath และเพิ่ม try-catch
+        try:
+            mlflow.log_artifacts("processed_data", artifact_path="processed_data")
+        except Exception as e:
+            print(f"Warning: Could not log artifacts: {e}")
 
         print("Preprocessing done. Run ID:", run.info.run_id)
 
 if __name__ == "__main__":
-    preprocess_data()
+     preprocess_data()
