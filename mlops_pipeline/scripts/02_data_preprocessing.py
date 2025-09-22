@@ -23,7 +23,7 @@ def preprocess_data():
 
         mlflow.log_metric("train_rows", len(X_train))
         mlflow.log_metric("test_rows", len(X_test))
-        mlflow.log_artifacts(os.path.abspath"processed_data", artifact_path="processed_data")
+        mlflow.log_artifacts(os.path.abspath("processed_data"), artifact_path="processed_data")
 
         print("Preprocessing done. Run ID:", run.info.run_id)
 
